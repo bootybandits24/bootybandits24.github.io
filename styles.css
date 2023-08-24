@@ -15,22 +15,21 @@ body {
 	text-shadow: 2px 2px 4px #e100ff;
   }
   
-  .expand-button {
+    .expand-button {
 	background-color: #702a6c;
 	color: white;
 	border: none;
 	border-radius: 10px;
-	padding: 11px 0; /* Remove horizontal padding and adjust vertical padding */
+	padding: 20px 0; /* Remove horizontal padding and adjust vertical padding */
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-	font-size: 15px;
+	font-size: 14px;
 	height: 15px; /* Set a fixed height for the button */
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 30px; /* Remove margin */
-
+	margin: 28px; /* Remove margin */
   }
   
   .expand-button:hover {
@@ -187,18 +186,19 @@ body {
 	animation: fadeIn 0.1s forwards;
   }
   
-  .scroll-to-top {
+ .scroll-to-top {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	background-color: #ff66b2;
+	background-color: #88034554;
 	color: white;
-	font-size: 30px;
-	padding: 15px;
-	border-radius: 90%;
+	font-size: 35px;
+	padding: 20px;
+	border-radius: 30%;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
   }
+  
   
   .scroll-to-top:hover {
 	background-color: #e64189;
