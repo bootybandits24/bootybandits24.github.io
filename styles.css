@@ -205,7 +205,7 @@ body {
   }
   
   @media (max-width: 768px) {
-	.container {
+	.event {
 	  width: 100%;
 	}
   }
