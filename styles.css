@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+	font-family: "Lucida Handwriting", cursive, Arial, sans-serif;
+	background-size: cover; /* The image will cover the entire background */
+	background-position: center; /* Center the background image */
+	background-color: #1d001b;
+	color: #ffffff;
+  }
+  
+  .header-title,
+  .event-title {
+	font-size: 50px; /* Make the title text slightly smaller */
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 2px 2px 4px #e100ff;
+  }
+  
+  .expand-button {
+	background-color: #702a6c;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 11px 0; /* Remove horizontal padding and adjust vertical padding */
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-size: 15px;
+	height: 15px; /* Set a fixed height for the button */
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px; /* Remove margin */
+
+  }
+  
+  .expand-button:hover {
+	background-color: #e64189;
+  }
+  
+  /* Styles for expand button */
+.navbar-item-expand {
+	cursor: pointer; /* Add a pointer cursor for the expand button */
+  }
+  
+  /* Styles for hidden items */
+  .hidden-items {
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%; /* Add this to make sure the hidden items take the full width */
+  }
+  
+  .hidden-items.show {
+	display: flex;
+  }
+
+  .navbar {
+	position: relative;
+	top: calc(100% - 200px); /* Adjust the top value for spacing */
+	width: 100%;
+	background-color: #3a0036;
+	padding: 10px 0;
+	z-index: 10;
+  }
+  
+  .navbar-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* Allow elements to wrap into the next line */
+  }
+  
+  .navbar-item {
+	display: inline-block;
+	padding: 15px 30px;
+	margin: 15px; /* Adjust margin for spacing */
+	border-radius: 10px 20px;
+	cursor: pointer;
+	transition: all 0.75 s ease;
+	text-decoration: none;
+	font-size: 22px;
+	color: #ffffff;
+	position: relative;
+	margin: 10px; /* Adjust margin for spacing */
+	width: 150px; /* Set a fixed width for the navbar items */
+	height:50px;
+  	white-space: normal; /* Allow text to wrap and create extra lines */
+  	text-align: center; /* Center the text within the button */
+	display: flex; /* Use flex display */
+	align-items: center; /* Vertically center the text */
+	justify-content: center; /* Horizontally center the text */
+  }
+  
+  .navbar-item::before {
+	content: "";
+	position: absolute;
+	top: -5px; /* Adjust the positioning of the box */
+	left: -5px; /* Adjust the positioning of the box */
+	width: calc(100% + 10px); /* Adjust the width of the box */
+	height: calc(100% + 10px); /* Adjust the height of the box */
+	border-radius: 20px;
+	background: radial-gradient(circle,#702a6c, #a076c7);
+	z-index: -1;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.3s ease, transform 0.8s ease;
+	
+  }
+  
+  .navbar-item:hover::before {
+	opacity: 1;
+	transform: scale(1.1);
+	animation: neon-glow 0s infinite alternate; /* Add flashing glow animation on hover #ffbbfa, #bd99df */
+  }
+  
+  @keyframes neon-glow {
+	0% {
+	  opacity: 0.8;
+	  transform: scale(1);
+	}
+	100% {
+	  opacity: 1;
+	  transform: scale(1.1);
+	}
+  }
+  
+  .header {
+	text-align: center;
+	padding: 5px 0; /* Adjust padding for spacing */
+	position: relative;
+  }
+  
+  .heart-icon {
+	color: #ff66b2;
+  }
+  
+  .main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .event {
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	border-radius: 30px;
+	margin: 40px 0;
+	text-align: center;
+	width: 30%;
+	position: relative;
+	box-shadow: 0 0 20px rgba(216, 7, 7, 0.5);
+	transition: box-shadow 0.3s ease;
+  }
+  
+  .event:hover {
+	box-shadow: 0 0 30px rgba(219, 23, 193, 0.7);
+  }
+  
+  .event-title {
+	font-size: 28px;
+	text-shadow: 2px 2px 4px #ff66b2;
+  }
+  
+  .event-image {
+	max-width: 100%;
+ 	max-height: 400px; /* Set the maximum height for the images */
+  	width: auto; /* Maintain aspect ratio */
+	margin-top: 20px;
+	border-radius: 15px;
+  }
+
+  .event-video {
+	max-width: 100%;
+	max-height: 400px; /* Set the maximum height for the videos */
+	width: auto; /* Maintain aspect ratio */
+	margin-top: 20px;
+	border-radius: 15px;
+  }
+  
+  .event-paragraph {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #e4dadf;
+  }
+  
+  .fade-in {
+	animation: fadeIn 0.1s forwards;
+  }
+  
+  .scroll-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: #ff66b2;
+	color: white;
+	font-size: 30px;
+	padding: 15px;
+	border-radius: 90%;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+	background-color: #e64189;
+  }
+  
+  @media (max-width: 768px) {
+	.container {
+	  width: 100%;
+	}
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
