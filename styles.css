@@ -206,6 +206,7 @@ body {
   
   @media (max-width: 768px) {
 	.event {
+	font-family: "Century Gothic", sans-serif;
 	  width: 100%;
 	}
   }
